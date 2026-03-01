@@ -99,7 +99,7 @@ secret.txt.vlt
 ```bash
 ./securevault -d secret.txt.vlt
 ```
-** Le programme demande le mot de passe et restaure le fichier original.**
+**Le programme demande le mot de passe et restaure le fichier original.**
 
 ## 🔑 Fournir le mot de passe via ligne de commande (si activé)
 
