@@ -3,16 +3,16 @@
 
 #include <stddef.h>
 
-void derive_key(const char *password,
+voidx	derive_key(const char *password,
                 unsigned char *salt,
                 unsigned char *key);
 
-int encrypt_data(unsigned char *plaintext, int plaintext_len,
+int	encrypt_data(unsigned char *plaintext, int plaintext_len,
                  unsigned char *key,
                  unsigned char *iv,
                  unsigned char *ciphertext);
 
-int decrypt_data(unsigned char *ciphertext, int ciphertext_len,
+int	decrypt_data(unsigned char *ciphertext, int ciphertext_len,
                  unsigned char *key,
                  unsigned char *iv,
                  unsigned char *plaintext);
