@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -Wall -Wextra -Iinclude
+CFLAGS = -Wall -Wextra -Werror -Iinclude
 SRC = src/main.c src/crypto.c src/file.c src/utils.c -o build/vault -lssl -lcrypto
 OUT = build/vault
 
