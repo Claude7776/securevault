@@ -1,7 +1,7 @@
 # Makefile pour SecureVault-update
 
 CC = gcc
-CFLAGS = -Wall -g
+CFLAGS = -Wall -Wextra -Werror
 TARGET = securevault
 
 # Tous les fichiers source

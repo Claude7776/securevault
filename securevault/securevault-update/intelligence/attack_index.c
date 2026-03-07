@@ -1,4 +1,5 @@
 #include "intelligence.h"
+#include <stdio.h>
 
 int compute_attack_score(int failed_auth, int entropy_mismatch, int vault_tamper, int timing_attack_pattern) {
     int score = 0;
@@ -10,5 +11,12 @@ int compute_attack_score(int failed_auth, int entropy_mismatch, int vault_tamper
 }
 
 int is_attack_probable(int score) {
-    return score > 40;
+    if(score >= 40)
+    printf("🚨 Attaque detectee\n");
+else if(score > 20)
+    printf("⚠️ Activite suspecte\n");
+else {
+    printf("✔ Systeme normal\n");
+}
+    return score;
 }
