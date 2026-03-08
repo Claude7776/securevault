@@ -15,8 +15,8 @@ int	main(void)
 	uint8_t	
 		password[32];
 
-	strcpy((char *)data, "SecureVault test message");
-	strcpy((char *)password, "superpassword");
+	memcpy(data, "SecureVault test message", 25);
+	memcpy(password, "superpassword", 13);
 	printf("Message original: %s\n", data);
 	vault_encrypt_data(data, ciphertext, password);
 	vault_decrypt_data(ciphertext, decrypted, password);
